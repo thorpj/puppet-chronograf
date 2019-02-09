@@ -1,7 +1,6 @@
 class chronograf (
   String $bind_ip        = $chronograf::params::bind_ip,
   String $bind_port      = $chronograf::params::bind_port,
-  String $package_source = 'default',
   String $version,
 ) inherits chronograf::params {
 
