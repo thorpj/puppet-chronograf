@@ -9,7 +9,7 @@ class chronograf::params {
             fail("${::osfamily} is not supported.")
         }
         'Debian': {
-            $provider = 'deb'
+            $provider = 'apt'
             $source   = "${package_name}_${package_version}_amd64.deb"
         }
         'RedHat': {
