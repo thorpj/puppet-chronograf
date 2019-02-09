@@ -16,7 +16,7 @@ class chronograf (
             exec { 'Download Chronograf Package':
                 command => "wget ${package_url} -P /tmp",
                 creates => "/tmp/${source}",
-                path    => '/usr/local/bin/:/bin/',
+                path    => '/usr/local/bin/:/bin/:/usr/bin',
                 require => Package['wget'],
             }
 
